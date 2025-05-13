@@ -34,19 +34,17 @@ jobs:
 
   publish:
     docker:
-      - image: cimg/python:3.12
+      - image: cimg/python:3.11
     steps:
       - checkout
       - attach_workspace:
           at: .
       - run:
           name: Install twine
-          command: |
-            python -m pip install --upgrade twine
+          command: pip install --upgrade twine
       - run:
           name: Upload to PyPI
-          command: |
-            twine upload dist/* -u $PYPI_USERNAME -p $PYPI_PASSWORD
+          command: twine upload dist/* -u "$PYPI_USERNAME" -p "$PYPI_PASSWORD"
 
 workflows:
   build-test-publish:
