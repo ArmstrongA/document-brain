@@ -30,25 +30,6 @@ def read_any_document(file_path: str) -> str:
     except Exception as e:
         return f"Error reading file: {str(e)}"
 
-# @mcp.tool(
-#     annotations={
-#         "title": "Save File",
-#         "description": "Save content to a file in the current directory.",
-#         "readOnlyHint": False,
-#         "openWorldHint": False
-#     }
-# )
-# def save_file(filename: str, content: str) -> str:
-#     """Save content to a file in the current directory."""
-#     try:
-#         # Sanitize the filename to prevent directory traversal
-#         safe_filename = os.path.basename(filename)
-#         with open(safe_filename, "w", encoding="utf-8") as f:
-#             f.write(content)
-#         return f"File '{safe_filename}' saved successfully."
-#     except Exception as e:
-#         return f"Error saving file: {str(e)}"
-
 @mcp.tool(
     annotations={
         "title": "Save File to PC",
