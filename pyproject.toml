@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mcp-document-brain"
-version = "0.1.1"
+version = "0.1.2"
 description = "MCP server for converting files to markdown using Markitdown"
 readme = "README.md"
 authors = [
