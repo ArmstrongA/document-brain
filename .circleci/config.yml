@@ -34,7 +34,7 @@ jobs:
 
   publish:
     docker:
-      - image: cimg/python:3.11
+      - image: cimg/python:3.12
     steps:
       - checkout
       - attach_workspace:
