@@ -20,7 +20,7 @@ jobs:
 
       - run:
           name: Run tests
-          command: pytest tests/ -v
+          command: python -m pytest tests/ -v
 
       - run:
           name: Build package
