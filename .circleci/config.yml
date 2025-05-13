@@ -18,9 +18,9 @@ jobs:
           name: Install dependencies using uv
           command: uv pip install --system -r <(uv pip compile --extra dev pyproject.toml)
 
-      # - run:
-      #     name: Run tests
-      #     command: pytest tests/ -v
+      - run:
+          name: Run tests
+          command: pytest tests/ -v
 
       - run:
           name: Build package
