@@ -1,19 +1,19 @@
 # MCP Document Reader
 
-An MCP server that can extract text from PDF and DOCX files.
+An MCP server that can extract text from document files.
 
 ## Installation
 
 ```bash
-pip install mcp-document-reader
+pip install mcp-document-brain
 ```
 
 ## Usage
 
 ### With Claude Desktop
 
-1. Install the package: `pip install mcp-document-reader`
-2. Run: `mcp install mcp-document-reader`
+1. Install the package: `pip install mcp-document-brain`
+2. Run: `mcp install mcp-document-brain`
 3. Restart Claude Desktop
 
 ### With Cursor
@@ -24,7 +24,7 @@ Add the following to your `~/.cursor/mcp.json` file:
 {
     "mcpServers": {
         "document-reader-mcp": {
-            "command": "mcp-document-reader"
+            "command": "mcp-document-brain"
         }
     }
 }
